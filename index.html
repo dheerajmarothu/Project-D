@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Engineering Roadmaps Hub — Master Any Engineering Field for Free</title>
+  <meta name="description" content="Your complete roadmap to master any engineering field for free. Choose from CSE, AI, Data Science, ECE, EEE, Civil, Mechanical and more." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+          colors: {
+            brand: {
+              50: '#eef2ff', 100: '#e0e7ff', 200: '#c7d2fe', 300: '#a5b4fc',
+              400: '#818cf8', 500: '#6366f1', 600: '#4f46e5', 700: '#4338ca',
+              800: '#3730a3', 900: '#312e81'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200 font-sans transition-colors duration-300">
+
+  <!-- Navbar -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-white/70 dark:bg-slate-950/70 border-b border-slate-200/50 dark:border-slate-800/50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <a href="#" onclick="navigateTo('home');return false;" id="nav-logo" class="flex items-center gap-2 text-lg sm:text-xl font-bold bg-gradient-to-r from-brand-500 to-cyan-500 bg-clip-text text-transparent">
+        🎓 Engineering Roadmaps Hub
+      </a>
+      <div class="flex items-center gap-3">
+        <button id="back-home-btn" onclick="navigateTo('home')" class="hidden items-center gap-1.5 px-3 py-1.5 text-sm font-medium rounded-lg bg-brand-500/10 text-brand-600 dark:text-brand-400 hover:bg-brand-500/20 transition-colors">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+          Home
+        </button>
+        <button id="theme-toggle" onclick="toggleTheme()" class="relative w-10 h-10 rounded-xl bg-slate-200/80 dark:bg-slate-800 flex items-center justify-center hover:bg-slate-300 dark:hover:bg-slate-700 transition-all duration-300" aria-label="Toggle theme">
+          <svg id="sun-icon" class="w-5 h-5 text-amber-500 absolute transition-all duration-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          <svg id="moon-icon" class="w-5 h-5 text-brand-400 absolute transition-all duration-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="app" class="pt-16 min-h-screen"></main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 backdrop-blur-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-lg font-bold bg-gradient-to-r from-brand-500 to-cyan-500 bg-clip-text text-transparent mb-3">🎓 Engineering Roadmaps Hub</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Helping students navigate their engineering journey with structured roadmaps, curated resources, and clear career guidance — completely free.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-3 text-slate-700 dark:text-slate-300">Quick Links</h4>
+          <ul class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
+            <li><a href="#" onclick="navigateTo('home');return false;" class="hover:text-brand-500 transition-colors">Home</a></li>
+            <li><a href="https://leetcode.com" target="_blank" class="hover:text-brand-500 transition-colors">LeetCode</a></li>
+            <li><a href="https://www.hackerrank.com" target="_blank" class="hover:text-brand-500 transition-colors">HackerRank</a></li>
+            <li><a href="https://www.codechef.com" target="_blank" class="hover:text-brand-500 transition-colors">CodeChef</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-3 text-slate-700 dark:text-slate-300">About & Credits</h4>
+          <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-2">Built to empower engineering students with free learning paths and curated YouTube resources.</p>
+          <p class="text-sm text-slate-500 dark:text-slate-400">All YouTube content belongs to respective creators. This site is for educational reference only.</p>
+        </div>
+      </div>
+      <div class="mt-8 pt-6 border-t border-slate-200 dark:border-slate-800 text-center text-xs text-slate-400 dark:text-slate-600">
+        © 2026 Engineering Roadmaps Hub. Made with ❤️ for students everywhere.
+      </div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

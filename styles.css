@@ -1,0 +1,121 @@
+/* ========== Engineering Roadmaps Hub — Custom Styles ========== */
+
+/* Animated gradient blobs on hero */
+@keyframes blob1 { 0%,100%{transform:translate(0,0) scale(1)} 33%{transform:translate(30px,-50px) scale(1.1)} 66%{transform:translate(-20px,20px) scale(0.9)} }
+@keyframes blob2 { 0%,100%{transform:translate(0,0) scale(1)} 33%{transform:translate(-30px,30px) scale(1.15)} 66%{transform:translate(25px,-30px) scale(0.85)} }
+@keyframes blob3 { 0%,100%{transform:translate(0,0) scale(1)} 33%{transform:translate(20px,40px) scale(1.05)} 66%{transform:translate(-35px,-20px) scale(0.95)} }
+
+.hero-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.35;
+  pointer-events: none;
+}
+.dark .hero-blob { opacity: 0.2; }
+.blob-1 { width: 400px; height: 400px; background: #6366f1; top: -100px; left: -100px; animation: blob1 8s ease-in-out infinite; }
+.blob-2 { width: 350px; height: 350px; background: #06b6d4; top: 50px; right: -80px; animation: blob2 10s ease-in-out infinite; }
+.blob-3 { width: 300px; height: 300px; background: #8b5cf6; bottom: -60px; left: 30%; animation: blob3 12s ease-in-out infinite; }
+
+/* Card hover glow */
+.branch-card {
+  transition: transform 0.3s cubic-bezier(.4,0,.2,1), box-shadow 0.3s ease;
+}
+.branch-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 20px 40px -12px rgba(99, 102, 241, 0.25);
+}
+.dark .branch-card:hover {
+  box-shadow: 0 20px 40px -12px rgba(99, 102, 241, 0.15);
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+.animate-fade-in-up { animation: fadeInUp 0.6s ease forwards; opacity: 0; }
+.animate-delay-100 { animation-delay: 0.1s; }
+.animate-delay-200 { animation-delay: 0.2s; }
+.animate-delay-300 { animation-delay: 0.3s; }
+.animate-delay-400 { animation-delay: 0.4s; }
+
+/* Progress bar fill */
+@keyframes progressFill { from { width: 0%; } }
+.progress-bar-fill { animation: progressFill 1s ease-out; }
+
+/* Star rating color */
+.star-filled { color: #f59e0b; }
+.star-empty { color: #cbd5e1; }
+.dark .star-empty { color: #475569; }
+
+/* Smooth scroll */
+html { scroll-behavior: smooth; }
+
+/* Roadmap timeline line */
+.roadmap-timeline {
+  position: relative;
+}
+.roadmap-timeline::before {
+  content: '';
+  position: absolute;
+  left: 19px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, #6366f1, #06b6d4, #10b981);
+  border-radius: 2px;
+}
+
+/* Checkbox custom */
+.topic-checkbox {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #94a3b8;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+  flex-shrink: 0;
+}
+.topic-checkbox:checked {
+  background: linear-gradient(135deg, #6366f1, #06b6d4);
+  border-color: #6366f1;
+}
+.topic-checkbox:checked::after {
+  content: '✓';
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* YouTube card red accent */
+.yt-card { border-left: 4px solid #ef4444; }
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+.dark .glass {
+  background: rgba(15,23,42,0.6);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 4px; }
+.dark ::-webkit-scrollbar-thumb { background: #475569; }
+
+/* Section enter animations */
+.section-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.section-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
