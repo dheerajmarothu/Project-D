@@ -110,7 +110,7 @@ function renderHome() {
           <br/>For Free
         </h1>
         <p class="mt-6 text-lg sm:text-xl text-slate-500 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
-          Structured semester-wise roadmaps with curated YouTube resources. Track your progress, stay motivated, and build expertise — one topic at a time.
+          Structured skill-based roadmaps with curated YouTube resources. Track your progress, stay motivated, and build expertise — one topic at a time.
         </p>
         <div class="mt-8 flex flex-wrap justify-center gap-4 text-sm">
           <div class="glass rounded-xl px-5 py-3 border border-slate-200 dark:border-slate-700/50">
@@ -132,7 +132,7 @@ function renderHome() {
     <!-- Branch Cards Grid -->
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
       <h2 class="text-2xl sm:text-3xl font-bold text-center mb-3 section-animate">Choose Your Engineering Path</h2>
-      <p class="text-center text-slate-500 dark:text-slate-400 mb-10 section-animate">Select a branch to explore its complete semester-wise roadmap</p>
+      <p class="text-center text-slate-500 dark:text-slate-400 mb-10 section-animate">Select a branch to explore its complete skill-based roadmap</p>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
         ${BRANCHES.map((b, i) => renderBranchCard(b, i)).join('')}
       </div>
@@ -143,6 +143,13 @@ function renderHome() {
 function renderBranchCard(branch, index) {
   const { done, total, pct } = getBranchProgress(branch.id);
   const delay = (index % 8) * 100;
+  
+  let medal = '';
+  if (pct === 100) medal = ' 💎';
+  else if (pct >= 75) medal = ' 🥇';
+  else if (pct >= 50) medal = ' 🥈';
+  else if (pct > 0) medal = ' 🥉';
+
   return `
     <div class="branch-card section-animate rounded-2xl p-5 cursor-pointer bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-brand-500/40 dark:hover:border-brand-500/30 group"
          onclick="navigateTo('roadmap','${branch.id}')" style="animation-delay:${delay}ms">
@@ -155,7 +162,7 @@ function renderBranchCard(branch, index) {
       <div class="space-y-2">
         <div class="flex justify-between text-xs font-medium">
           <span class="text-slate-500 dark:text-slate-400">${done}/${total} topics</span>
-          <span class="text-brand-500">${pct}%</span>
+          <span class="text-brand-500 font-bold" id="medal-${branch.id}">${pct}%${medal}</span>
         </div>
         <div class="h-1.5 bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden">
           <div class="h-full rounded-full bg-gradient-to-r ${branch.gradient} progress-bar-fill" style="width:${pct}%"></div>
@@ -181,6 +188,12 @@ function renderRoadmap(branchId) {
   if (!branch) return '<p class="text-center py-20">Branch not found.</p>';
   const { done, total, pct } = getBranchProgress(branchId);
 
+  let medal = '';
+  if (pct === 100) medal = ' 💎';
+  else if (pct >= 75) medal = ' 🥇';
+  else if (pct >= 50) medal = ' 🥈';
+  else if (pct > 0) medal = ' 🥉';
+
   return `
     <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
       <!-- Header -->
@@ -192,7 +205,7 @@ function renderRoadmap(branchId) {
         <div id="roadmap-progress" class="mt-6 max-w-md mx-auto">
           <div class="flex justify-between text-sm font-medium mb-1.5">
             <span class="text-slate-600 dark:text-slate-300">${done} of ${total} completed</span>
-            <span class="text-brand-500 font-bold">${pct}%</span>
+            <span class="text-brand-500 font-bold" id="roadmap-medal">${pct}%${medal}</span>
           </div>
           <div class="h-2.5 bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden">
             <div class="h-full rounded-full bg-gradient-to-r ${branch.gradient} transition-all duration-700 progress-bar-fill" style="width:${pct}%"></div>
@@ -200,7 +213,7 @@ function renderRoadmap(branchId) {
         </div>
       </div>
 
-      <!-- Semesters Timeline -->
+      <!-- Skills Timeline -->
       <div class="roadmap-timeline space-y-8 pl-4">
         ${branch.semesters.map((sem, si) => renderSemester(branch, sem, si)).join('')}
       </div>
@@ -260,13 +273,23 @@ function updateProgressUI(branchId) {
   const branch = BRANCHES.find(b => b.id === branchId);
   if (!branch) return;
   const { done, total, pct } = getBranchProgress(branchId);
+  
+  let medal = '';
+  if (pct === 100) medal = ' 💎';
+  else if (pct >= 75) medal = ' 🥇';
+  else if (pct >= 50) medal = ' 🥈';
+  else if (pct > 0) medal = ' 🥉';
+
   const prog = document.getElementById('roadmap-progress');
   if (prog) {
     prog.querySelector('span:first-child').textContent = `${done} of ${total} completed`;
-    prog.querySelector('span:last-child').textContent = `${pct}%`;
+    const medalEl = document.getElementById('roadmap-medal');
+    if (medalEl) medalEl.textContent = `${pct}%${medal}`;
     prog.querySelector('div > div').style.width = `${pct}%`;
   }
+  
   // Re-render to update line-through styles
+
   if (currentView === 'roadmap' && currentBranch === branchId) {
     navigateTo('roadmap', branchId);
   }
