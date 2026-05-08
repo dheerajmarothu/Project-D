@@ -13,19 +13,19 @@ const BRANCHES = [
       {
         title: 'Core Skills',
         topics: [
-          { name: 'Introduction to Programming (C)', yt: 'https://youtube.com/results?search_query=C+programming+full+course', done: false },
-          { name: 'Data Structures & Algorithms', yt: 'https://youtube.com/results?search_query=data+structures+full+course', done: false },
-          { name: 'Database Management Systems', yt: 'https://youtube.com/results?search_query=DBMS+full+course', done: false },
-          { name: 'Operating Systems', yt: 'https://youtube.com/results?search_query=operating+systems+full+course', done: false },
-          { name: 'Computer Networks', yt: 'https://youtube.com/results?search_query=computer+networks+full+course', done: false }
+          { name: 'Introduction to Programming (C)', yt: 'https://www.youtube.com/@freecodecamp', done: false },
+          { name: 'Data Structures & Algorithms', yt: 'https://www.youtube.com/@JennyslecturesCSIT', done: false },
+          { name: 'Database Management Systems', yt: 'https://www.youtube.com/@GateSmashers', done: false },
+          { name: 'Operating Systems', yt: 'https://www.youtube.com/@nesoacademy', done: false },
+          { name: 'Computer Networks', yt: 'https://www.youtube.com/@nesoacademy', done: false }
         ]
       },
       {
         title: 'Technical Skills',
         topics: [
-          { name: 'Object Oriented Programming (C++/Java)', yt: 'https://youtube.com/results?search_query=OOP+C%2B%2B+full+course', done: false },
-          { name: 'Web Development (HTML/CSS/JS)', yt: 'https://youtube.com/results?search_query=web+development+full+course', done: false },
-          { name: 'Software Engineering', yt: 'https://youtube.com/results?search_query=software+engineering+full+course', done: false }
+          { name: 'Object Oriented Programming (C++/Java)', yt: 'https://www.youtube.com/@BroCodez', done: false },
+          { name: 'Web Development (HTML/CSS/JS)', yt: 'https://www.youtube.com/@TraversyMedia', done: false },
+          { name: 'Software Engineering', yt: 'https://www.youtube.com/@GateSmashers', done: false }
         ]
       }
     ]
@@ -42,28 +42,28 @@ const BRANCHES = [
       {
         title: 'Core Skills',
         topics: [
-          { name: 'Electrical circuits & network theory', yt: 'https://youtube.com/results?search_query=Electrical+circuits+%26+network+theory', done: false },
-          { name: 'Power systems (generation, transmission, distribution)', yt: 'https://youtube.com/results?search_query=Power+systems+generation+transmission+distribution', done: false },
-          { name: 'Control systems', yt: 'https://youtube.com/results?search_query=Control+systems+engineering', done: false },
-          { name: 'Electrical machines (motors, transformers)', yt: 'https://youtube.com/results?search_query=Electrical+machines+motors+transformers', done: false },
-          { name: 'Analog & digital electronics basics', yt: 'https://youtube.com/results?search_query=Analog+%26+digital+electronics+basics', done: false }
+          { name: 'Electrical circuits & network theory', yt: 'https://www.youtube.com/@nesoacademy', done: false },
+          { name: 'Power systems (generation, transmission, distribution)', yt: 'https://www.youtube.com/@EngineeringAcademy', done: false },
+          { name: 'Control systems', yt: 'https://www.youtube.com/@TutorialsPoint_', done: false },
+          { name: 'Electrical machines (motors, transformers)', yt: 'https://www.youtube.com/@EngineeringAcademy', done: false },
+          { name: 'Analog & digital electronics basics', yt: 'https://www.youtube.com/@nesoacademy', done: false }
         ]
       },
       {
         title: 'Technical Skills',
         topics: [
-          { name: 'MATLAB / Simulink', yt: 'https://youtube.com/results?search_query=MATLAB+Simulink+tutorial', done: false },
-          { name: 'PSCAD (power system simulation)', yt: 'https://youtube.com/results?search_query=PSCAD+power+system+simulation', done: false },
-          { name: 'PLC & SCADA basics', yt: 'https://youtube.com/results?search_query=PLC+%26+SCADA+basics', done: false },
-          { name: 'Embedded C (for controllers)', yt: 'https://youtube.com/results?search_query=Embedded+C+for+controllers', done: false }
+          { name: 'MATLAB / Simulink', yt: 'https://www.youtube.com/@MATLAB', done: false },
+          { name: 'PSCAD (power system simulation)', yt: 'https://www.youtube.com/@pscad_mtc', done: false },
+          { name: 'PLC & SCADA basics', yt: 'https://www.youtube.com/@RealPars', done: false },
+          { name: 'Embedded C (for controllers)', yt: 'https://www.youtube.com/@freecodecamp', done: false }
         ]
       },
       {
         title: 'Practical Skills',
         topics: [
-          { name: 'Circuit design & troubleshooting', yt: 'https://youtube.com/results?search_query=Circuit+design+%26+troubleshooting', done: false },
-          { name: 'Wiring, protection systems', yt: 'https://youtube.com/results?search_query=Wiring+protection+systems', done: false },
-          { name: 'Renewable energy systems (solar, EV basics)', yt: 'https://youtube.com/results?search_query=Renewable+energy+systems+solar+EV+basics', done: false }
+          { name: 'Circuit design & troubleshooting', yt: 'https://www.youtube.com/@AllAboutElectronics', done: false },
+          { name: 'Wiring, protection systems', yt: 'https://www.youtube.com/@EngineeringMindset', done: false },
+          { name: 'Renewable energy systems (solar, EV basics)', yt: 'https://www.youtube.com/@EngineeringMindset', done: false }
         ]
       }
     ]
@@ -80,33 +80,33 @@ const BRANCHES = [
       {
         title: 'Core Skills',
         topics: [
-          { name: 'Analog & digital electronics', yt: 'https://youtube.com/results?search_query=Analog+%26+digital+electronics', done: false },
-          { name: 'Signals and systems', yt: 'https://youtube.com/results?search_query=Signals+and+systems', done: false },
-          { name: 'Communication systems', yt: 'https://youtube.com/results?search_query=Communication+systems', done: false },
-          { name: 'Microprocessors & microcontrollers', yt: 'https://youtube.com/results?search_query=Microprocessors+%26+microcontrollers', done: false }
+          { name: 'Analog & digital electronics', yt: 'https://www.youtube.com/@nesoacademy', done: false },
+          { name: 'Signals and systems', yt: 'https://www.youtube.com/@nesoacademy', done: false },
+          { name: 'Communication systems', yt: 'https://www.youtube.com/@TutorialsPoint_', done: false },
+          { name: 'Microprocessors & microcontrollers', yt: 'https://www.youtube.com/@nesoacademy', done: false }
         ]
       },
       {
         title: 'Technical Skills',
         topics: [
-          { name: 'Embedded systems (Arduino, Raspberry Pi)', yt: 'https://youtube.com/results?search_query=Embedded+systems+Arduino+Raspberry+Pi', done: false },
-          { name: 'VLSI basics', yt: 'https://youtube.com/results?search_query=VLSI+basics', done: false },
-          { name: 'Verilog / VHDL', yt: 'https://youtube.com/results?search_query=Verilog+VHDL+tutorial', done: false },
-          { name: 'MATLAB', yt: 'https://youtube.com/results?search_query=MATLAB+tutorial', done: false }
+          { name: 'Embedded systems (Arduino, Raspberry Pi)', yt: 'https://www.youtube.com/@PaulMcWhorter', done: false },
+          { name: 'VLSI basics', yt: 'https://www.youtube.com/@TutorialsPoint_', done: false },
+          { name: 'Verilog / VHDL', yt: 'https://www.youtube.com/@nptelhrd', done: false },
+          { name: 'MATLAB', yt: 'https://www.youtube.com/@MATLAB', done: false }
         ]
       },
       {
         title: 'Tools',
         topics: [
-          { name: 'Multisim / Proteus', yt: 'https://youtube.com/results?search_query=Multisim+Proteus+tutorial', done: false },
-          { name: 'Keil IDE', yt: 'https://youtube.com/results?search_query=Keil+IDE+tutorial', done: false }
+          { name: 'Multisim / Proteus', yt: 'https://www.youtube.com/@AllAboutElectronics', done: false },
+          { name: 'Keil IDE', yt: 'https://www.youtube.com/@TutorialsPoint_', done: false }
         ]
       },
       {
         title: 'Trending Skills',
         topics: [
-          { name: 'IoT (Internet of Things)', yt: 'https://youtube.com/results?search_query=IoT+Internet+of+Things+course', done: false },
-          { name: '5G & wireless communication', yt: 'https://youtube.com/results?search_query=5G+%26+wireless+communication', done: false }
+          { name: 'IoT (Internet of Things)', yt: 'https://www.youtube.com/@edurekaIN', done: false },
+          { name: '5G & wireless communication', yt: 'https://www.youtube.com/@Techquickie', done: false }
         ]
       }
     ]
@@ -123,27 +123,27 @@ const BRANCHES = [
       {
         title: 'Core Skills',
         topics: [
-          { name: 'Structural engineering', yt: 'https://youtube.com/results?search_query=Structural+engineering+course', done: false },
-          { name: 'Geotechnical engineering', yt: 'https://youtube.com/results?search_query=Geotechnical+engineering', done: false },
-          { name: 'Fluid mechanics', yt: 'https://youtube.com/results?search_query=Fluid+mechanics+civil', done: false },
-          { name: 'Surveying', yt: 'https://youtube.com/results?search_query=Surveying+civil+engineering', done: false }
+          { name: 'Structural engineering', yt: 'https://www.youtube.com/@TikleAcademy', done: false },
+          { name: 'Geotechnical engineering', yt: 'https://www.youtube.com/@EngineeringAcademy', done: false },
+          { name: 'Fluid mechanics', yt: 'https://www.youtube.com/@TikleAcademy', done: false },
+          { name: 'Surveying', yt: 'https://www.youtube.com/@CivilMentors', done: false }
         ]
       },
       {
         title: 'Software Skills',
         topics: [
-          { name: 'AutoCAD', yt: 'https://youtube.com/results?search_query=AutoCAD+civil+tutorial', done: false },
-          { name: 'STAAD Pro', yt: 'https://youtube.com/results?search_query=STAAD+Pro+tutorial', done: false },
-          { name: 'ETABS', yt: 'https://youtube.com/results?search_query=ETABS+tutorial', done: false },
-          { name: 'Revit', yt: 'https://youtube.com/results?search_query=Revit+architecture+tutorial', done: false }
+          { name: 'AutoCAD', yt: 'https://www.youtube.com/@CADCAMTutorials', done: false },
+          { name: 'STAAD Pro', yt: 'https://www.youtube.com/@BentleySystems', done: false },
+          { name: 'ETABS', yt: 'https://www.youtube.com/@CSIAmerica', done: false },
+          { name: 'Revit', yt: 'https://www.youtube.com/@BalkanArchitect', done: false }
         ]
       },
       {
         title: 'Practical Skills',
         topics: [
-          { name: 'Site management', yt: 'https://youtube.com/results?search_query=Site+management+civil+engineering', done: false },
-          { name: 'Construction planning', yt: 'https://youtube.com/results?search_query=Construction+planning', done: false },
-          { name: 'Master testing', yt: 'https://youtube.com/results?search_query=Material+testing+civil+engineering', done: false }
+          { name: 'Site management', yt: 'https://www.youtube.com/@CivilMentors', done: false },
+          { name: 'Construction planning', yt: 'https://www.youtube.com/@ConstructionManagement', done: false },
+          { name: 'Master testing', yt: 'https://www.youtube.com/@CivilEngineeringTube', done: false }
         ]
       }
     ]
@@ -160,26 +160,26 @@ const BRANCHES = [
       {
         title: 'Core Skills',
         topics: [
-          { name: 'Thermodynamics', yt: 'https://youtube.com/results?search_query=Thermodynamics+mechanical', done: false },
-          { name: 'Fluid mechanics', yt: 'https://youtube.com/results?search_query=Fluid+mechanics+mechanical', done: false },
-          { name: 'Strength of materials', yt: 'https://youtube.com/results?search_query=Strength+of+materials', done: false },
-          { name: 'Machine design', yt: 'https://youtube.com/results?search_query=Machine+design', done: false }
+          { name: 'Thermodynamics', yt: 'https://www.youtube.com/@TikleAcademy', done: false },
+          { name: 'Fluid mechanics', yt: 'https://www.youtube.com/@TikleAcademy', done: false },
+          { name: 'Strength of materials', yt: 'https://www.youtube.com/@EngineeringAcademy', done: false },
+          { name: 'Machine design', yt: 'https://www.youtube.com/@EngineeringAcademy', done: false }
         ]
       },
       {
         title: 'Software Skills',
         topics: [
-          { name: 'AutoCAD / SolidWorks', yt: 'https://youtube.com/results?search_query=SolidWorks+tutorial', done: false },
-          { name: 'ANSYS (simulation)', yt: 'https://youtube.com/results?search_query=ANSYS+tutorial', done: false },
-          { name: 'CATIA', yt: 'https://youtube.com/results?search_query=CATIA+tutorial', done: false }
+          { name: 'AutoCAD / SolidWorks', yt: 'https://www.youtube.com/@CADCAMTutorials', done: false },
+          { name: 'ANSYS (simulation)', yt: 'https://www.youtube.com/@ANSYSInc', done: false },
+          { name: 'CATIA', yt: 'https://www.youtube.com/@CADCAMTutorials', done: false }
         ]
       },
       {
         title: 'Practical Skills',
         topics: [
-          { name: 'Manufacturing processes', yt: 'https://youtube.com/results?search_query=Manufacturing+processes', done: false },
-          { name: 'CNC basics', yt: 'https://youtube.com/results?search_query=CNC+programming+basics', done: false },
-          { name: 'Robotics basics', yt: 'https://youtube.com/results?search_query=Robotics+basics+mechanical', done: false }
+          { name: 'Manufacturing processes', yt: 'https://www.youtube.com/@EngineeringAcademy', done: false },
+          { name: 'CNC basics', yt: 'https://www.youtube.com/@HaasAutomationInc', done: false },
+          { name: 'Robotics basics', yt: 'https://www.youtube.com/@edurekaIN', done: false }
         ]
       }
     ]
@@ -196,33 +196,33 @@ const BRANCHES = [
       {
         title: 'Core Skills',
         topics: [
-          { name: 'Networking (TCP/IP, DNS, HTTP)', yt: 'https://youtube.com/results?search_query=Networking+TCP%2FIP+DNS+HTTP', done: false },
-          { name: 'Operating systems (Linux, Windows)', yt: 'https://youtube.com/results?search_query=Operating+systems+Linux+Windows+security', done: false },
-          { name: 'Cryptography basics', yt: 'https://youtube.com/results?search_query=Cryptography+basics', done: false }
+          { name: 'Networking (TCP/IP, DNS, HTTP)', yt: 'https://www.youtube.com/@NetworkChuck', done: false },
+          { name: 'Operating systems (Linux, Windows)', yt: 'https://www.youtube.com/@DavidBombal', done: false },
+          { name: 'Cryptography basics', yt: 'https://www.youtube.com/@Computerphile', done: false }
         ]
       },
       {
         title: 'Technical Skills',
         topics: [
-          { name: 'Ethical hacking', yt: 'https://youtube.com/results?search_query=Ethical+hacking+full+course', done: false },
-          { name: 'Penetration testing', yt: 'https://youtube.com/results?search_query=Penetration+testing+tutorial', done: false },
-          { name: 'Vulnerability assessment', yt: 'https://youtube.com/results?search_query=Vulnerability+assessment', done: false }
+          { name: 'Ethical hacking', yt: 'https://www.youtube.com/@HackerSploit', done: false },
+          { name: 'Penetration testing', yt: 'https://www.youtube.com/@TheCyberMentor', done: false },
+          { name: 'Vulnerability assessment', yt: 'https://www.youtube.com/@JohnHammond', done: false }
         ]
       },
       {
         title: 'Tools',
         topics: [
-          { name: 'Kali Linux', yt: 'https://youtube.com/results?search_query=Kali+Linux+tutorial', done: false },
-          { name: 'Wireshark', yt: 'https://youtube.com/results?search_query=Wireshark+tutorial', done: false },
-          { name: 'Metasploit', yt: 'https://youtube.com/results?search_query=Metasploit+tutorial', done: false },
-          { name: 'Burp Suite', yt: 'https://youtube.com/results?search_query=Burp+Suite+tutorial', done: false }
+          { name: 'Kali Linux', yt: 'https://www.youtube.com/@NetworkChuck', done: false },
+          { name: 'Wireshark', yt: 'https://www.youtube.com/@DavidBombal', done: false },
+          { name: 'Metasploit', yt: 'https://www.youtube.com/@HackerSploit', done: false },
+          { name: 'Burp Suite', yt: 'https://www.youtube.com/@TheCyberMentor', done: false }
         ]
       },
       {
         title: 'Programming',
         topics: [
-          { name: 'Python', yt: 'https://youtube.com/results?search_query=Python+for+cybersecurity', done: false },
-          { name: 'bash scripting', yt: 'https://youtube.com/results?search_query=bash+scripting+tutorial', done: false }
+          { name: 'Python', yt: 'https://www.youtube.com/@freecodecamp', done: false },
+          { name: 'bash scripting', yt: 'https://www.youtube.com/@NetworkChuck', done: false }
         ]
       }
     ]
@@ -239,31 +239,31 @@ const BRANCHES = [
       {
         title: 'Core Skills',
         topics: [
-          { name: 'Statistics & probability', yt: 'https://youtube.com/results?search_query=Statistics+%26+probability+for+data+science', done: false },
-          { name: 'Linear algebra', yt: 'https://youtube.com/results?search_query=Linear+algebra+for+data+science', done: false },
-          { name: 'Data analysis', yt: 'https://youtube.com/results?search_query=Data+analysis+tutorial', done: false }
+          { name: 'Statistics & probability', yt: 'https://www.youtube.com/@statquest', done: false },
+          { name: 'Linear algebra', yt: 'https://www.youtube.com/@3blue1brown', done: false },
+          { name: 'Data analysis', yt: 'https://www.youtube.com/@AlexTheAnalyst', done: false }
         ]
       },
       {
         title: 'Technical Skills',
         topics: [
-          { name: 'Python / R', yt: 'https://youtube.com/results?search_query=Python+vs+R+for+data+science', done: false },
-          { name: 'Pandas, NumPy', yt: 'https://youtube.com/results?search_query=Pandas+NumPy+tutorial', done: false },
-          { name: 'Machine learning algorithms', yt: 'https://youtube.com/results?search_query=Machine+learning+algorithms+explained', done: false }
+          { name: 'Python / R', yt: 'https://www.youtube.com/@freecodecamp', done: false },
+          { name: 'Pandas, NumPy', yt: 'https://www.youtube.com/@Coreyms', done: false },
+          { name: 'Machine learning algorithms', yt: 'https://www.youtube.com/@statquest', done: false }
         ]
       },
       {
         title: 'Tools',
         topics: [
-          { name: 'Jupyter Notebook', yt: 'https://youtube.com/results?search_query=Jupyter+Notebook+tutorial', done: false },
-          { name: 'Power BI / Tableau', yt: 'https://youtube.com/results?search_query=Power+BI+Tableau+tutorial', done: false }
+          { name: 'Jupyter Notebook', yt: 'https://www.youtube.com/@Coreyms', done: false },
+          { name: 'Power BI / Tableau', yt: 'https://www.youtube.com/@KevinStratvert', done: false }
         ]
       },
       {
         title: 'Advanced Skills',
         topics: [
-          { name: 'Deep learning', yt: 'https://youtube.com/results?search_query=Deep+learning+for+data+science', done: false },
-          { name: 'Big data (Hadoop, Spark)', yt: 'https://youtube.com/results?search_query=Hadoop+Spark+tutorial', done: false }
+          { name: 'Deep learning', yt: 'https://www.youtube.com/@Deeplearningai', done: false },
+          { name: 'Big data (Hadoop, Spark)', yt: 'https://www.youtube.com/@edurekaIN', done: false }
         ]
       }
     ]
@@ -280,30 +280,30 @@ const BRANCHES = [
       {
         title: 'Core Skills',
         topics: [
-          { name: 'Server-side logic', yt: 'https://youtube.com/results?search_query=Server-side+logic+explained', done: false },
-          { name: 'APIs (REST, GraphQL)', yt: 'https://youtube.com/results?search_query=REST+GraphQL+API+tutorial', done: false },
-          { name: 'Databases', yt: 'https://youtube.com/results?search_query=Database+design+tutorial', done: false }
+          { name: 'Server-side logic', yt: 'https://www.youtube.com/@HusseinNasser-software-engineering', done: false },
+          { name: 'APIs (REST, GraphQL)', yt: 'https://www.youtube.com/@freecodecamp', done: false },
+          { name: 'Databases', yt: 'https://www.youtube.com/@HusseinNasser-software-engineering', done: false }
         ]
       },
       {
         title: 'Programming',
         topics: [
-          { name: 'Node.js / Python / Java / Go', yt: 'https://youtube.com/results?search_query=Backend+programming+languages', done: false }
+          { name: 'Node.js / Python / Java / Go', yt: 'https://www.youtube.com/@TraversyMedia', done: false }
         ]
       },
       {
         title: 'Database Skills',
         topics: [
-          { name: 'MySQL / PostgreSQL', yt: 'https://youtube.com/results?search_query=MySQL+PostgreSQL+tutorial', done: false },
-          { name: 'MongoDB', yt: 'https://youtube.com/results?search_query=MongoDB+tutorial', done: false }
+          { name: 'MySQL / PostgreSQL', yt: 'https://www.youtube.com/@BroCodez', done: false },
+          { name: 'MongoDB', yt: 'https://www.youtube.com/@WebDevSimplified', done: false }
         ]
       },
       {
         title: 'Tools',
         topics: [
-          { name: 'Git & GitHub', yt: 'https://youtube.com/results?search_query=Git+GitHub+tutorial', done: false },
-          { name: 'Docker', yt: 'https://youtube.com/results?search_query=Docker+tutorial+for+beginners', done: false },
-          { name: 'AWS / Cloud basics', yt: 'https://youtube.com/results?search_query=AWS+Cloud+basics', done: false }
+          { name: 'Git & GitHub', yt: 'https://www.youtube.com/@Fireship', done: false },
+          { name: 'Docker', yt: 'https://www.youtube.com/@NetworkChuck', done: false },
+          { name: 'AWS / Cloud basics', yt: 'https://www.youtube.com/@TechWithTim', done: false }
         ]
       }
     ]
@@ -320,29 +320,29 @@ const BRANCHES = [
       {
         title: 'Core Skills',
         topics: [
-          { name: 'HTML, CSS, JavaScript', yt: 'https://youtube.com/results?search_query=HTML+CSS+JavaScript+course', done: false }
+          { name: 'HTML, CSS, JavaScript', yt: 'https://www.youtube.com/@BroCodez', done: false }
         ]
       },
       {
         title: 'Frameworks',
         topics: [
-          { name: 'React.js (most important)', yt: 'https://youtube.com/results?search_query=React.js+full+course', done: false },
-          { name: 'Angular / Vue (optional)', yt: 'https://youtube.com/results?search_query=Angular+Vue+tutorial', done: false }
+          { name: 'React.js (most important)', yt: 'https://www.youtube.com/@freecodecamp', done: false },
+          { name: 'Angular / Vue (optional)', yt: 'https://www.youtube.com/@TraversyMedia', done: false }
         ]
       },
       {
         title: 'Skills',
         topics: [
-          { name: 'Responsive design', yt: 'https://youtube.com/results?search_query=Responsive+web+design+tutorial', done: false },
-          { name: 'UI/UX basics', yt: 'https://youtube.com/results?search_query=UI+UX+design+basics', done: false },
-          { name: 'Browser debugging', yt: 'https://youtube.com/results?search_query=Chrome+DevTools+tutorial', done: false }
+          { name: 'Responsive design', yt: 'https://www.youtube.com/@KevinPowell', done: false },
+          { name: 'UI/UX basics', yt: 'https://www.youtube.com/@DesignCourse', done: false },
+          { name: 'Browser debugging', yt: 'https://www.youtube.com/@Fireship', done: false }
         ]
       },
       {
         title: 'Tools',
         topics: [
-          { name: 'Git', yt: 'https://youtube.com/results?search_query=Git+tutorial+frontend', done: false },
-          { name: 'Figma', yt: 'https://youtube.com/results?search_query=Figma+tutorial+for+developers', done: false }
+          { name: 'Git', yt: 'https://www.youtube.com/@programmingwithmosh', done: false },
+          { name: 'Figma', yt: 'https://www.youtube.com/@DesignCourse', done: false }
         ]
       }
     ]
@@ -359,29 +359,29 @@ const BRANCHES = [
       {
         title: 'Core Skills',
         topics: [
-          { name: 'Machine learning', yt: 'https://youtube.com/results?search_query=Machine+learning+full+course', done: false },
-          { name: 'Deep learning', yt: 'https://youtube.com/results?search_query=Deep+learning+full+course', done: false },
-          { name: 'Neural networks', yt: 'https://youtube.com/results?search_query=Neural+networks+explained', done: false }
+          { name: 'Machine learning', yt: 'https://www.youtube.com/@krishnaik06', done: false },
+          { name: 'Deep learning', yt: 'https://www.youtube.com/@Deeplearningai', done: false },
+          { name: 'Neural networks', yt: 'https://www.youtube.com/@3blue1brown', done: false }
         ]
       },
       {
         title: 'Programming',
         topics: [
-          { name: 'Python', yt: 'https://youtube.com/results?search_query=Python+for+AI', done: false }
+          { name: 'Python', yt: 'https://www.youtube.com/@BroCodez', done: false }
         ]
       },
       {
         title: 'Frameworks',
         topics: [
-          { name: 'TensorFlow', yt: 'https://youtube.com/results?search_query=TensorFlow+tutorial', done: false },
-          { name: 'PyTorch', yt: 'https://youtube.com/results?search_query=PyTorch+tutorial', done: false }
+          { name: 'TensorFlow', yt: 'https://www.youtube.com/@freecodecamp', done: false },
+          { name: 'PyTorch', yt: 'https://www.youtube.com/@freecodecamp', done: false }
         ]
       },
       {
         title: 'Advanced Skills',
         topics: [
-          { name: 'NLP (Natural Language Processing)', yt: 'https://youtube.com/results?search_query=NLP+tutorial', done: false },
-          { name: 'Computer Vision', yt: 'https://youtube.com/results?search_query=Computer+Vision+tutorial', done: false }
+          { name: 'NLP (Natural Language Processing)', yt: 'https://www.youtube.com/@krishnaik06', done: false },
+          { name: 'Computer Vision', yt: 'https://www.youtube.com/@MurtazasWorkshopRoboticsandAI', done: false }
         ]
       }
     ]
@@ -398,22 +398,22 @@ const BRANCHES = [
       {
         title: 'Core Skills',
         topics: [
-          { name: 'Supervised & unsupervised learning', yt: 'https://youtube.com/results?search_query=Supervised+%26+unsupervised+learning', done: false },
-          { name: 'Model training & evaluation', yt: 'https://youtube.com/results?search_query=Model+training+%26+evaluation', done: false }
+          { name: 'Supervised & unsupervised learning', yt: 'https://www.youtube.com/@statquest', done: false },
+          { name: 'Model training & evaluation', yt: 'https://www.youtube.com/@krishnaik06', done: false }
         ]
       },
       {
         title: 'Technical Skills',
         topics: [
-          { name: 'Scikit-learn', yt: 'https://youtube.com/results?search_query=Scikit-learn+tutorial', done: false },
-          { name: 'TensorFlow / PyTorch', yt: 'https://youtube.com/results?search_query=TensorFlow+PyTorch+tutorial', done: false }
+          { name: 'Scikit-learn', yt: 'https://www.youtube.com/@freecodecamp', done: false },
+          { name: 'TensorFlow / PyTorch', yt: 'https://www.youtube.com/@Deeplearningai', done: false }
         ]
       },
       {
         title: 'Advanced Skills',
         topics: [
-          { name: 'Reinforcement learning', yt: 'https://youtube.com/results?search_query=Reinforcement+learning+tutorial', done: false },
-          { name: 'Model optimization', yt: 'https://youtube.com/results?search_query=Machine+learning+model+optimization', done: false }
+          { name: 'Reinforcement learning', yt: 'https://www.youtube.com/@Deeplearningai', done: false },
+          { name: 'Model optimization', yt: 'https://www.youtube.com/@krishnaik06', done: false }
         ]
       }
     ]
